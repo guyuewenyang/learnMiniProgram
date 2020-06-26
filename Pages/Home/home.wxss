@@ -1,0 +1,5 @@
+/* Pages/Home/home.wxss */
+
+.title {
+  color: brown;
+}

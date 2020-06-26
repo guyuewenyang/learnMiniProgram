@@ -1,0 +1,4 @@
+<!--Pages/Home/home.wxml-->
+<text class="title">我们的首页</text>
+<video>我的vido</video>
+<button>按钮</button>
