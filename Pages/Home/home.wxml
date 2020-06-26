@@ -1,3 +1,8 @@
 <!--Pages/Home/home.wxml-->
-<text class="title">我们的首页</text>
-<button>按钮</button>
+<view>{{name}}</view>
+<view>年龄：{{age}}</view>
+<view>{{students[0].age}}</view>
+<view wx:for="{{students}}" wx:key="key">{{item.name}}</view>
+<view>当前计数：{{countRetain}}</view>
+<button size="mini" bindtap="btnAction">+</button>
+<button size="mini" bindtap="btnAction1">-</button>

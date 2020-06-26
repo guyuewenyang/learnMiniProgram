@@ -5,6 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
+name:"Hello,胡文阳",
+age:18,
+students:[
+{name:"why",age:18,order:1},
+{name:"tony",age:19,order:2},
+{name:"may",age:17,order:3}
+],
+countRetain:0
+
+  },
+
+  /**
+   * button按钮的点击事件
+   */
+  btnAction() {
+    // this.data.countRetain++;
+    // console.log(this.data.countRetain);
+    this.setData({
+      countRetain:this.data.countRetain + 1
+      })
+
+  },
+
+  btnAction1() {
+    this.setData({
+      countRetain:this.data.countRetain - 1
+      })
 
   },
 
