@@ -2,5 +2,5 @@
 
 <view>当前计数：{{number_count}}</view>
 <view class="title">骄傲哈哈啊</view>
-<my_cmp tabs="{{titles}}" bind:handleClickAction = "buttonAction"/>
-
+<my_cmp class="my_cmp" tabs="{{titles}}" bind:handleClickAction = "buttonAction"/>
+<button bindtap="handleChange">主动修改组件内东西</button>

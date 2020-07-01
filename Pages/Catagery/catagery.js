@@ -64,8 +64,18 @@ Page({
   onShareAppMessage: function () {
 
   }, 
+
   buttonAction (event){
 
     console.log('当前选中的是：' + event.detail.title)
+  },
+
+  handleChange (){
+    const cmmp = this.selectComponent(".my_cmp")
+    console.log(cmmp)
+    cmmp.setData({
+      num:10
+    })
+    cmmp.changeCurrentIndexFunction(3)
   }
 })
