@@ -1,3 +1,14 @@
 <!--Compones/my_cmp/my_cmp.wxml-->
-<view class="title titleclass">{{title}}</view>
-<view class="content">自定义内容，2020年北京新冠肺炎报告情况如下：</view>
+<view>-----------------------------</view>
+
+<view class="contain">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view class="item {{curentIndex == index ? 'active' : ''}}"
+          bind:tap = "handleClickAction" 
+          data-index = "{{index}}"
+          data-title = "{{item}}"
+    >
+    <text>{{item}}</text>
+    </view>
+  </block>
+</view>

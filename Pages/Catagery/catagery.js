@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    titles:['衣服','裤子','帽子']
-
+    titles:['衣服','裤子','帽子'],
+    number_count:0
   },
 
   /**
@@ -63,5 +63,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  }, 
+  buttonAction (event){
+
+    console.log('当前选中的是：' + event.detail.title)
   }
 })

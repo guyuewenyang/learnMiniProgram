@@ -1,16 +1,17 @@
 /* Pages/Catagery/catagery.wxss */
 
 .container {
-  height: 80rpx;
-  background-color: brown;
+  display: flex;
   flex-direction: row;
+  background: brown;
+  height: 88rpx;
+  line-height: 88rpx;
 }
 
 .item {
-  height: 40px;
-  flex: 1;
   text-align: center;
-  background-color: #e6e6e6;
+  flex: 1;
+  background: #e6e6e6;
 }
 
 .title {

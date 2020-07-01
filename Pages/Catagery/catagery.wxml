@@ -1,9 +1,6 @@
 <!--Pages/Catagery/catagery.wxml-->
-<my_cmp title = '哈哈哈哈' titleclass = "red" />
+
+<view>当前计数：{{number_count}}</view>
 <view class="title">骄傲哈哈啊</view>
-<view class="container">
-  <block wx:for="{{titles}}" wx:key = "{{index}}">
-    <view class="item">{{item}}</view>
-  </block>
-</view>
+<my_cmp tabs="{{titles}}" bind:handleClickAction = "buttonAction"/>
 
