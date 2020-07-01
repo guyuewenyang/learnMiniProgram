@@ -1,2 +1,9 @@
 <!--Pages/Catagery/catagery.wxml-->
-<text>Pages/Catagery/catagery.wxml</text>
+<my_cmp title = '哈哈哈哈' titleclass = "red" />
+<view class="title">骄傲哈哈啊</view>
+<view class="container">
+  <block wx:for="{{titles}}" wx:key = "{{index}}">
+    <view class="item">{{item}}</view>
+  </block>
+</view>
+

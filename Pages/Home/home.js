@@ -10,7 +10,8 @@ Page({
     students: [{
         name: "why",
         age: 18,
-        order: 1
+        order: 1,
+        pass:""
       },
       {
         name: "tony",
@@ -23,7 +24,46 @@ Page({
         order: 3
       }
     ],
-    countRetain: 0
+    countRetain: 0,
+
+    inputShowed: false,
+    inputVal: ""
+},
+showInput: function () {
+    this.setData({
+        inputShowed: true
+    });
+},
+hideInput: function () {
+    this.setData({
+        inputVal: "",
+        inputShowed: false
+    });
+},
+clearInput: function () {
+    this.setData({
+        inputVal: ""
+    });
+},
+inputTyping: function (e) {
+    this.setData({
+        inputVal: e.detail.value
+    });
+},
+
+  handleAlem(){
+    const _this = this
+    wx.chooseImage({
+      complete: (res) => {
+        console.log(res)
+          const path = res.tempFilePaths[0]
+         _this.setData ({
+          pass:path
+
+        })
+
+      },
+    })
 
   },
 
@@ -98,6 +138,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+
+  onTabItemTap: function () {
+    console.log('被点击');
 
   }
 })

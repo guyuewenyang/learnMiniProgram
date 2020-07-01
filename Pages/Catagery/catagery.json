@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my_cmp":"/Compones/my_cmp/my_cmp"
+  }
 }
